@@ -14,7 +14,7 @@ body {
     background-color: #000000;
 }
 .container .is-primary .panel-heading {
-    background-color: #383838;
+    background-color: #383838;t
 }
 .button.is-primary{
     background-color: #4572FF;
@@ -45,10 +45,13 @@ p.panel-heading{
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
     font-size: 1rem;
     background-color: #F6F8FF;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 25%;
+    width: 80%;
+    margin-top: 23px;
+    margin-left: 9.9%;
     color: black;
+    align-content: stretch;
+    justify-content: space-between;
+    
 }
 .column.is-three-fifths, .column.is-three-fifths-tablet {
     flex: none;
@@ -99,17 +102,25 @@ hr{
     background-color: #fffFFF;
     border-radius: 6px;
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
-    width: 70px;
-    height: 70px;
+    font-size: 1rem;
+    padding: 20px;
+    width: 105px;
+    height: 115px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
 }
 .puerta{
     background-color: #ffffff;
     border-radius: 6px;
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
     font-size: 1rem;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    width: 10%;
-    height: 20%;
+    width: 105px;
+    height: 115px;
+    margin-left: 50px;
 }
 .botonPuerta{
     height: 140px;
@@ -119,21 +130,28 @@ hr{
     background-color: rgb(212, 226, 233);
     box-shadow: 0 0.5em 1em -0.125em rgb(138 138 138 / 30%), 0 0 0 1px rgb(138 138 138 / 1%);
     padding: 25px;
-    
+    padding-top: 25px;
+    float: right;
+    margin-right: 4%;
+    margin-top:1%;
 }
-.textoEstado{
-    padding-top: 30px;
-    font-weight:bolder;
-    font-size: 15.5px;
-    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    
-}
-.textoIcono{
-    font-weight:bolder;
-    text-align: left;
+.textoPuerta{
+    font-weight: bolder;
+    text-align: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 75px;
+    padding-right: 54px;
 }
 
-
+.textoFoco{
+    font-weight: bolder;
+    text-align: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 68px;
+    padding-right: 38px;
+}
 h1{
     text-align: left;
     font-size: 30px;
@@ -183,11 +201,7 @@ ul{
     overflow: hidden;
   }
   
-@media screen and (max-width: 1023px) {
-    #slider .card-content{
-      display: none;
-    }
-  }
+
 
 .prev,
 .next {
@@ -241,4 +255,49 @@ ul{
     float: left;
     padding:19px;
     padding-left: 1px;
+}
+
+@media screen and (max-width: 840px){
+  .nosotros {
+    padding-left: 50px;  
+    padding-right: 50px;
+}
+    .nosotros img {
+        width: 150%;
+        float: left;
+        padding: 15px;
+        margin-left: 23px;
+    }
+    #slider{
+        width: 300px;
+        height: 200px;
+    }
+    .card{
+        width: 350px;
+        height: 180px;
+    }
+    .card figure{
+        width: 250px;
+        height: 100px;
+    }
+    .card-content{
+        width: 0px;
+        height: 0px;
+    }
+    .historia {
+        padding-left: 50px;  
+        padding-right: 50px;
+}
+    .historia img{
+        width: 160%;
+        padding:10px;
+    }
+    .textoFoco{
+        font-weight: bolder;
+        text-align: inherit;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 28px;
+    }
 }

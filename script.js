@@ -3,7 +3,6 @@ function getinput() {
   alert(input);
 };
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // Get all "navbar-burger" elements
